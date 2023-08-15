@@ -31,7 +31,7 @@ class Deque{
         void insertFront(int x){
             if(isFull()) return;
             for(int i=size-1;i>=0;i--){
-                arr[i] = arr[i+1];
+                arr[i+1] = arr[i];
             }
             arr[0] = x;
             size++;
